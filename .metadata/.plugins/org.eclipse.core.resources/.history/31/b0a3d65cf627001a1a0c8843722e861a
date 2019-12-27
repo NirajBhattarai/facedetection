@@ -1,0 +1,5 @@
+package com.oodles.repository;
+
+public class UserRepository {
+
+}

@@ -1,0 +1,51 @@
+package com;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.oodles.domain.User;
+import com.oodles.repository.UserRepository;
+
+@RestController
+@RequestMapping("/user")
+public class UserController {
+
+	@Autowired
+	UserRepository userRepository;
+
+	@PostMapping
+	public void createUser(@RequestBody User user) {
+		userRepository.save(user);
+		
+	}
+
+	@GetMapping("/{id}")
+	public User getUser(@PathVariable Long id) {
+		return userRepository.findById(id).get();
+	}
+
+	@GetMapping()
+	public Iterable<User> getUser() {
+		return userRepository.findAll();
+	}
+
+	@PutMapping("/{id}")
+	public Status updateUser(@PathVariable Long id, @RequestBody User user) {
+		user.setId(id);
+		userRepository.save(user);
+		return Status.OK;
+	}
+
+	@DeleteMapping("/{id}")
+	public Status deleteUser(@PathVariable Long id) {
+		userRepository.deleteById(id);
+		return Status.OK;
+	}
+}

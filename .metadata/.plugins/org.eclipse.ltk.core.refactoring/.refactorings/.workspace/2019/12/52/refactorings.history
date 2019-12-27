@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 0 elements to &apos;facedetection/src/main/resources&apos;&#x0A;- Destination element: &apos;facedetection/src/main/resources&apos;" description="Copy compilation units" destination="=facedetection/src\/main\/resources" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1577448514341" units="0" version="1.0"/>
+</session>

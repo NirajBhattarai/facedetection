@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;UserController.java&apos; to &apos;oodles/src/main/java/com.controller&apos;&#x0A;- Original project: &apos;oodles&apos;&#x0A;- Destination element: &apos;oodles/src/main/java/com.controller&apos;&#x0A;- Original element: &apos;com.UserController.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java&lt;com.controller" element1="/src\/main\/java&lt;com{UserController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1577375495662" units="1" version="1.0"/>
+</session>

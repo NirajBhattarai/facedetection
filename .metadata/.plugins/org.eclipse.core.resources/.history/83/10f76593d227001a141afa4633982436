@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: oodles
+
+    
+
+datasources:
+  default:
+    url: ${JDBC_URL:`jdbc:mysql://localhost:3306/test`}
+    username: ${JDBC_USER:root}
+    password: ${JDBC_PASSWORD:"root"}
+    driverClassName: ${JDBC_DRIVER:com.mysql.jdbc.Driver}
+
+    
