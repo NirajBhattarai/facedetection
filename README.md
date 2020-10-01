@@ -1,4 +1,4 @@
-name: facedetection
+name: Example
 description: An example adapter that does something.
 node_identifier: example
 platforms:
