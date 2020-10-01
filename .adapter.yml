@@ -1,6 +1,6 @@
 name: facedetection
 description: An example adapter that does something.
-node_identifier: example1
+node_identifier: myidentifier 
 platforms:
   - Docker
   - AWS Lambda
